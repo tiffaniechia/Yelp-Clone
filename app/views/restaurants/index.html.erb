@@ -6,7 +6,9 @@ No restaurants
 
 <% @restaurants.each do |r|%>
 <%= r.name %>
-<%= link_to 'edit', edit_restaurant_path(r)%><br>
+<%= link_to 'edit', edit_restaurant_path(r)%>
+<%= link_to 'delete', restaurant_path(r), :method => :delete, data:{confirm: 'Are you sure?'} %>
+<br>
 <%end%>
 
 

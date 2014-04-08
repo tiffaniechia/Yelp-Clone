@@ -34,3 +34,14 @@ describe "editing a restaurant" do
     expect(page).to have_content('mcd')
   end  
 end  
+
+describe "deleting a restaurant" do 
+  it "should be able to delete a restaurant" do 
+    visit '/restaurants/new' 
+    fill_in 'Name', with: 'mcdonalds'
+    click_button 'Create Restaurant' 
+    expect(page).to have_content('mcdonalds')
+    click_link 'delete'
+    expect(page).not_to have_content('mcdonalds')
+  end  
+end  
