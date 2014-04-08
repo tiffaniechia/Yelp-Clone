@@ -1,6 +1,13 @@
 <h1>Restaurants#index</h1>
-<ul> 
-<%= @restaurants.each do |r|%>
-<li><%= r%></li>
+
+<%if @restaurants.count == 0%>
+No restaurants
 <%end%>
-<ul>
+
+<% @restaurants.each do |r|%>
+<%= r.name %>
+<%= link_to 'edit', edit_restaurant_path(r)%><br>
+<%end%>
+
+
+<a href="restaurants/new">Add a restaurant</a>

@@ -3,10 +3,11 @@ This is an exercise by Makers Academy made for Ruby on Rails
 
 Day 1
 
-- should be able to add name, category & location
-- home page should show list of restaurants 
+- should be able to add name, category & location (done)
+- home page should show list of restaurants (done)
 - should be able to edit an option off the homepage
 - should be able to delete an option off the homepage
+- each restaurant has its own page which shows all info...?
 
 Day 2 
 
