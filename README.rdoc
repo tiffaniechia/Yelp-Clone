@@ -11,5 +11,9 @@ Day 1
 
 Day 2 
 
-- should be able to add reviews to restaurants
-- should be able to show the average review score for restaurants
+- should be able to add reviews to restaurants(done)
+- should be able to show the average review score for restaurants(done)
+
+Day 3
+
+- should be able to add validations
