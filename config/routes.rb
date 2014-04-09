@@ -1,6 +1,10 @@
 YelpApp::Application.routes.draw do
 
-  resources :restaurants
+  resources :restaurants do 
+    resources :reviews
+  end  
+
+
   # get "restaurants/index"
   # get "restaurants/new"
   # get "restaurants/create"

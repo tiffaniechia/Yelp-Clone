@@ -4,10 +4,14 @@
 No restaurants
 <%end%>
 
+
 <% @restaurants.each do |r|%>
 <%= r.name %>
 <%= link_to 'edit', edit_restaurant_path(r)%>
 <%= link_to 'delete', restaurant_path(r), :method => :delete, data:{confirm: 'Are you sure?'} %>
+<%=link_to 'add review', new_restaurant_review_path(r)%>
+<br>
+<%= r.average_rating %>
 <br>
 <%end%>
 
