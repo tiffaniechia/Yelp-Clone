@@ -1,3 +1,4 @@
+<h1> Add a review</h1>
 
 <% if @review.errors.any? %>
   <div id="error_explanation">
@@ -16,5 +17,5 @@
   <%= f.text_area :comment %>
   <%= f.label :rating%>
   <%= f.select :rating, 1..5%>
-  <%= f.submit %>
+  <%= f.submit%>
 <%end%>  
