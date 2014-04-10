@@ -44,4 +44,14 @@ describe "deleting a restaurant" do
     click_link 'delete'
     expect(page).not_to have_content('mcdonalds')
   end  
-end  
+end
+
+describe "errors" do 
+    it "should display errors if bad data is given" do 
+      visit '/restaurants' 
+      click_link  'Add a restaurant'
+      click_button 'Create Restaurant'
+      expect(page).to have_content('error')
+    end  
+end
+
