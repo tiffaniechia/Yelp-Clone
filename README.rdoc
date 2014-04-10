@@ -17,3 +17,8 @@ Day 2
 Day 3
 
 - should be able to add validations(done)
+- should be able to show ratings in terms of stars
+
+Day 4
+
+- should be able to deploy full range of devise functions
