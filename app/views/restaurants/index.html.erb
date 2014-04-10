@@ -1,8 +1,5 @@
 <h1>Restaurants</h1>
 
-<%if @restaurants.count == 0%>
-No restaurants
-<%end%>
 
 
 <% @restaurants.each do |r|%>
@@ -12,8 +9,7 @@ No restaurants
       <%= link_to 'delete', restaurant_path(r), :method => :delete, data:{confirm: 'Are you sure?'}, class: 'btn btn-danger' %>
       <%=link_to 'add review', new_restaurant_review_path(r), class:'btn btn-success'%>
       <br>
-      <h3><%= r.average_rating %>/5</h3>
+      <h3><%= star_rating(r.average_rating) %></h3>
     </div>
 <%end%>
-
 

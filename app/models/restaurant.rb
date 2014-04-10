@@ -3,6 +3,7 @@ class Restaurant < ActiveRecord::Base
   validates :name, presence: true
 
   def average_rating
+    return 'No reviews' if reviews.none?
     reviews.average(:rating)
   end
 

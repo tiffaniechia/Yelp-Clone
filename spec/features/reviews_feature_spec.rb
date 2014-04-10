@@ -15,7 +15,7 @@ describe ReviewsController do
       fill_in 'Comment', with: 'whyyyyy'
       select '4', from: 'Rating'
       click_button 'Create Review'
-      expect(page).to have_content('4')
+      expect(page).to have_content('★★★★☆')
     end  
 
     it "should be able to average reviews" do 
@@ -24,12 +24,12 @@ describe ReviewsController do
       fill_in 'Comment', with: 'whyyyyy'
       select '4', from: 'Rating'
       click_button 'Create Review'
-      expect(page).to have_content('4')
+      expect(page).to have_content('★★★★☆')
       click_link  'add review'
       fill_in 'Comment', with: 'meh'
       select '2', from: 'Rating'
       click_button 'Create Review'
-      expect(page).to have_content('3')
+      expect(page).to have_content('★★★☆☆')
     end  
 
 
