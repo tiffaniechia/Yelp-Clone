@@ -7,6 +7,8 @@ Users are able to add/edit a new restaurant (Name, Category, and Location) or re
 
 This task was set by [Alex Peattie](https://github.com/alexpeattie).
 
+(Week 9)
+
 
 ##
 
@@ -14,7 +16,7 @@ This task was set by [Alex Peattie](https://github.com/alexpeattie).
 ![screenshot](app/assets/images/yelp_home.png)
 
 
-##Stack:
+##Technologies Used
 - Ruby
 - Ruby on Rails
 - Javascript
